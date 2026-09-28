@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Downloads</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      min-height: 100vh;
+      color: #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+    header { text-align: center; margin-bottom: 50px; }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 0 10px;
+      background: linear-gradient(135deg, #4ecca3, #2f9e8f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      color: #a0a0a0;
+      font-size: 1rem;
+      margin: 0;
+    }
+    .doc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 900px;
+    }
+    .doc-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 28px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .doc-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    .doc-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .doc-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0 0 6px;
+      color: #ffffff;
+    }
+    .doc-desc {
+      font-size: 0.9rem;
+      color: #b0b0b0;
+      margin: 0 0 20px;
+      line-height: 1.5;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #4ecca3, #2f9e8f);
+      color: #0f0f1a;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: all 0.25s ease;
+      width: 100%;
+      text-align: center;
+    }
+    .btn:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 20px rgba(78, 204, 163, 0.4);
+    }
+    footer {
+      margin-top: 60px;
+      color: #888;
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Document Downloads</h1>
+    <p class="subtitle">Access all CBID resources in one place</p>
+  </header>
+
+  <div class="doc-grid">
+    <div class="doc-card">
+      <div class="doc-icon">📊</div>
+      <h3 class="doc-title">CBID Strategic Framework 2026–2030</h3>
+      <p class="doc-desc">Community-Based Inclusive Development strategic framework for 2026–2030.</p>
+      <a class="btn" href="https://raw.githubusercontent.com/maxallday/sdsd_dsd_docs/main/FINAL%20STRATEGIC%20FRAMEWORK%20FINAL%20DOCUMENT%20(3).pdf">Download PDF</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">📖</div>
+      <h3 class="doc-title">Awareness Booklet</h3>
+      <p class="doc-desc">Awareness booklet final document.</p>
+      <a class="btn" href="https://raw.githubusercontent.com/maxallday/sdsd_dsd_docs/main/AWARENESS%20BOOKLET%20FINAL%20DOCUMENT.pdf">Download PDF</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">🚀</div>
+      <h3 class="doc-title">Ultra Poor Graduation Strategy 2025–2030</h3>
+      <p class="doc-desc">Kenya Ultra Poor Graduation Strategy.</p>
+      <a class="btn" href="https://raw.githubusercontent.com/maxallday/sdsd_dsd_docs/main/Kenya-Ultra-Poor-Graduation-Strategy.pdf">Download PDF</a>
+    </div>
+
+    <div class="doc-card">
+      <div class="doc-icon">🛠️</div>
+      <h3 class="doc-title">Training Manual CBID</h3>
+      <p class="doc-desc">Training manual final document.</p>
+      <a class="btn" href="https://raw.githubusercontent.com/maxallday/sdsd_dsd_docs/main/TRAINING%20MANUAL%20FINAL%20DOCUMENT.pdf">Download PDF</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 CBID Document · DSD
+  </footer>
+</body>
+</html>
