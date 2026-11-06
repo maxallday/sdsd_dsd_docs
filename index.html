@@ -86,17 +86,21 @@
       transform: scale(1.02);
       box-shadow: 0 6px 20px rgba(78, 204, 163, 0.4);
     }
+  
     footer {
-      margin-top: 60px;
-      color: #888;
-      font-size: 0.8rem;
-      text-align: center;
-    }
+  margin-top: auto; /* Pushes the footer to the bottom of a flex container */
+  padding-top: 60px; /* Replaces margin-top spacing so it doesn't break layout mechanics */
+  padding-bottom: 20px; /* Prevents text from hugging the very edge of the screen */
+  color: #888;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
   </style>
 </head>
 <body>
   <header>
-    <h1>SDSP-DSD ocument Downloads</h1>
+    <h1>SDSP-DSD Document Downloads</h1>
     <p class="subtitle">Access all SDSP-DSD resources in one place</p>
   </header>
 
